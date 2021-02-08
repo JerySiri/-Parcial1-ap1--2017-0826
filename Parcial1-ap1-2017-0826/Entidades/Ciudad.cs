@@ -7,7 +7,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Parcial1_ap1_2017_0826.Entidades
 {
-    class Ciudades
+    class Ciudad
     {
         [Key]
         public int CiudadId { get; set; }
