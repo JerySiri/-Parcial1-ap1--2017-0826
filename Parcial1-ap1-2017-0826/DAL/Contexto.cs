@@ -6,11 +6,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Parcial1_ap1_2017_0826
+namespace Parcial1_ap1_2017_0826.DAL
 {
-    class Contexto : DbContext
+    public class Contexto : DbContext
     {
-        public DbSet<Ciudad> Ciudad{ get; set; }
+        public DbSet<Ciudad> Ciudad { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlite(@"Data Source= Ciudades.db");
