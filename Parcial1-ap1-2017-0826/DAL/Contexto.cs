@@ -13,7 +13,7 @@ namespace Parcial1_ap1_2017_0826.DAL
         public DbSet<Ciudad> Ciudad { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlite(@"Data Source= Ciudades.db");
+            optionsBuilder.UseSqlite("Data Source= Ciudades.db");
         }
     }
 }

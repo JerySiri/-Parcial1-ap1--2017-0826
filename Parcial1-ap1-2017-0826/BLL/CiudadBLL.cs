@@ -73,6 +73,25 @@ namespace Parcial1_ap1_2017_0826.BLL
             return p;
         }
 
+        public static bool existeNombre(string nombre)
+        {
+            bool p = false;
+            Contexto contexto = new Contexto();
+            try
+            {
+                p = contexto.Ciudad.Any(c => c.Nombre == nombre);
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            finally
+            {
+                contexto.Dispose();
+            }
+            return p;
+        }
+
         public static bool guardar(Ciudad ciudad)
         {
             if (!existe(ciudad.CiudadId))
