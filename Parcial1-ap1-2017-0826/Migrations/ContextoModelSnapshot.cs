@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using Parcial1_ap1_2017_0826;
+using Parcial1_ap1_2017_0826.DAL;
 
 namespace Parcial1_ap1_2017_0826.Migrations
 {

@@ -3,12 +3,12 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using Parcial1_ap1_2017_0826;
+using Parcial1_ap1_2017_0826.DAL;
 
 namespace Parcial1_ap1_2017_0826.Migrations
 {
     [DbContext(typeof(Contexto))]
-    [Migration("20210208225231_inicial")]
+    [Migration("20210208235919_inicial")]
     partial class inicial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
