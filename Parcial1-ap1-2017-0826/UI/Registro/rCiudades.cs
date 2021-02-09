@@ -66,7 +66,7 @@ namespace Parcial1_ap1_2017_0826
 
             ciudad = llenarclase();
 
-            if (CiudadBLL.existeNombre(NombreTextBox.Text))
+            if (!CiudadBLL.existeNombre(NombreTextBox.Text))
             {
                 paso = CiudadBLL.guardar(ciudad);
             }
@@ -109,6 +109,7 @@ namespace Parcial1_ap1_2017_0826
             if (ciudad != null)
             {
                 limpiar();
+                llenarcampo(ciudad);
                 MessageBox.Show("Accion realizada con exito!!", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
